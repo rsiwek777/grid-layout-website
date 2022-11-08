@@ -127,7 +127,6 @@ h1.company-name {
 		background-color: #fff;
 		z-index: 500;
 	}
-
 }
 
 .hamburger.is-active {
@@ -331,6 +330,45 @@ h1.company-name {
 		margin-bottom: 1.5em;
 		font-size: 1.8rem;
 		color: $gold;
+	}
+}
+
+.newsletter {
+	padding: 8em 2em;
+	background-color: $red;
+	text-align: center;
+
+	&__text {
+		padding: 0 1em;
+		margin-bottom: 1em;
+		font-size: 4rem;
+		font-weight: 200;
+	}
+
+	&__form {
+		&-input {
+			margin-bottom: 1em;
+			padding: 1em;
+			width: 100%;
+			background-color: $white;
+			border: 1px solid transparent;
+		}
+
+		&-btn {
+			padding: 1em;
+			border: 1px solid $gold;
+			background: none;
+			font-weight: bold;
+			color: $gold;
+			cursor: pointer;
+			box-shadow: inset $darkgold 0 0 6px;
+			transition: background-color 0.3s, color 0.3s;
+
+			&:hover {
+				color: $red;
+				background-color: $gold;
+			}
+		}
 	}
 }
 
