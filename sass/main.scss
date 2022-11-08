@@ -372,6 +372,31 @@ h1.company-name {
 	}
 }
 
+.gallery {
+	padding: 2em 2em;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.5em;
+
+
+	&__img {
+		border: 1px solid $darkgold;
+		height: 300px;
+		width: 100%;
+		object-fit: cover;
+
+		&:nth-child(odd) {
+			display: none;
+		}
+	}
+}
+
+.footer {
+	padding: 2em 1em;
+	border-top: 1px solid $darker;
+	text-align: center;
+}
+
 @import './small';
 @import './medium';
 @import './large';
