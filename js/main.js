@@ -16,7 +16,7 @@ const handleCurrentYear = () => {
 navLinks.forEach(e =>
 	e.addEventListener('click', () => {
 		navMobile.classList.remove('nav-mobile--active')
-		navBtn.classList.toggle('is-active')
+		navBtn.classList.remove('is-active')
 	})
 )
 
